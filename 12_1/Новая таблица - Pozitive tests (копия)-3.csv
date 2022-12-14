@@ -1,0 +1,2 @@
+name,key,picture,usePost,useCashLimit,cashLimit,cashLimitCurrency,useWish,useNames,isPhoneRequired
+piputs,c,tree_toys,true,true,100,rub,false,false,false

@@ -1,0 +1,1067 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Cloners),Inward issue link (Cloners),Outward issue link (Cloners),Attachment,Attachment,Attachment,Attachment,Custom field (Development),Custom field (Rank),Status Category
+Create box negative - 500,IS-27,10026,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 11:18 PM,13/Dec/22 11:19 PM,13/Dec/22 11:22 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/api|https://staging.lpitko.ru/api/register?redirect=%2F]/box/
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""testik"",//change ""Create box negative"" here
+    ""key"": ""ttttttt"",//change ""Create box negative"" here
+    ""picture"": ""{{picture}}"",
+    ""usePost"": {{usePost}},
+    ""useCashLimit"": {{useCashLimit}},
+    ""cashLimit"": ""1.1"",
+    ""cashLimitCurrency"": ""{{cashLimitCurrency}}"",
+    ""useWish"": {{useWish}},
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": {{useNames}},
+    ""isPhoneRequired"": {{isPhoneRequired}},
+    ""logo"": null
+}{noformat}
+
+[^Новая таблица - Negative tests-final.csv]
+[^Box test full flow.postman_test_run.json]
+[^workspace.postman_globals_new.json]
+
+*Expected Result*:
+
+500 kod",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,IS-26,13/Dec/22 11:18 PM;616c7d88a6ecfc0071ceb3da;Box test full flow.postman_test_run.json;https://team-16689568931872.atlassian.net/secure/attachment/10011/Box+test+full+flow.postman_test_run.json,13/Dec/22 11:18 PM;616c7d88a6ecfc0071ceb3da;workspace.postman_globals_new.json;https://team-16689568931872.atlassian.net/secure/attachment/10012/workspace.postman_globals_new.json,13/Dec/22 11:18 PM;616c7d88a6ecfc0071ceb3da;Новая таблица - Negative tests-final.csv;https://team-16689568931872.atlassian.net/secure/attachment/10013/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0+-+Negative+tests-final.csv,13/Dec/22 11:18 PM;616c7d88a6ecfc0071ceb3da;Новая таблица - Pozitive tests (копия)-3.csv;https://team-16689568931872.atlassian.net/secure/attachment/10014/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0+-+Pozitive+tests+%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29-3.csv,,0|i0005r:,To Do
+Create box negative,IS-26,10025,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 11:14 PM,13/Dec/22 11:18 PM,13/Dec/22 11:17 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/api|https://staging.lpitko.ru/api/register?redirect=%2F]/box/
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{name}}"",
+    ""key"": ""{{key}}"",
+    ""picture"": ""{{picture}}"",
+    ""usePost"": {{usePost}},
+    ""useCashLimit"": {{useCashLimit}},
+    ""cashLimit"": ""{{cashLimit}}"",
+    ""cashLimitCurrency"": ""{{cashLimitCurrency}}"",
+    ""useWish"": {{useWish}},
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": {{useNames}},
+    ""isPhoneRequired"": {{isPhoneRequired}},
+    ""logo"": null
+}{noformat}
+
+[^Новая таблица - Negative tests-final.csv]
+[^Box test full flow.postman_test_run.json]
+[^workspace.postman_globals_new.json]
+
+
+
+*Expected Result*:
+
+400 kod",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-27,,IS-24,13/Dec/22 11:14 PM;616c7d88a6ecfc0071ceb3da;Box test full flow.postman_test_run.json;https://team-16689568931872.atlassian.net/secure/attachment/10006/Box+test+full+flow.postman_test_run.json,13/Dec/22 11:14 PM;616c7d88a6ecfc0071ceb3da;workspace.postman_globals_new.json;https://team-16689568931872.atlassian.net/secure/attachment/10007/workspace.postman_globals_new.json,13/Dec/22 11:17 PM;616c7d88a6ecfc0071ceb3da;Новая таблица - Negative tests-final.csv;https://team-16689568931872.atlassian.net/secure/attachment/10010/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0+-+Negative+tests-final.csv,13/Dec/22 11:14 PM;616c7d88a6ecfc0071ceb3da;Новая таблица - Pozitive tests (копия)-3.csv;https://team-16689568931872.atlassian.net/secure/attachment/10008/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0+-+Pozitive+tests+%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29-3.csv,,0|i0005j:,To Do
+Change box positive,IS-25,10024,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 11:12 PM,13/Dec/22 11:13 PM,13/Dec/22 11:12 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/api|https://staging.lpitko.ru/api/register?redirect=%2F]/box/
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{name}}"",
+    ""key"": ""{{key}}"",
+    ""picture"": ""cookie_star"",
+    ""usePost"": {{usePost}},
+    ""useCashLimit"": {{useCashLimit}},
+    ""cashLimit"": ""{{cashLimit}}"",
+    ""cashLimitCurrency"": ""{{cashLimitCurrency}}"",
+    ""useWish"": {{useWish}},
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": {{useNames}},
+    ""isPhoneRequired"": {{isPhoneRequired}},
+    ""logo"": null
+}{noformat}
+
+[^Новая таблица - Pozitive tests (копия)-3.csv]
+[^Box test full flow.postman_test_run.json]
+[^workspace.postman_globals_new.json]
+
+*Expected Result*:
+
+200 kod",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,IS-24,13/Dec/22 11:12 PM;616c7d88a6ecfc0071ceb3da;Box test full flow.postman_test_run.json;https://team-16689568931872.atlassian.net/secure/attachment/10003/Box+test+full+flow.postman_test_run.json,13/Dec/22 11:12 PM;616c7d88a6ecfc0071ceb3da;workspace.postman_globals_new.json;https://team-16689568931872.atlassian.net/secure/attachment/10004/workspace.postman_globals_new.json,13/Dec/22 11:12 PM;616c7d88a6ecfc0071ceb3da;Новая таблица - Pozitive tests (копия)-3.csv;https://team-16689568931872.atlassian.net/secure/attachment/10005/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0+-+Pozitive+tests+%28%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F%29-3.csv,,,0|i0005b:,To Do
+Create box positive,IS-24,10023,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 11:06 PM,13/Dec/22 11:15 PM,13/Dec/22 11:16 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/api|https://staging.lpitko.ru/api/register?redirect=%2F]/box/
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{name}}"",
+    ""key"": ""{{key}}"",
+    ""picture"": ""{{picture}}"",
+    ""usePost"": {{usePost}},
+    ""useCashLimit"": {{useCashLimit}},
+    ""cashLimit"": ""{{cashLimit}}"",
+    ""cashLimitCurrency"": ""{{cashLimitCurrency}}"",
+    ""useWish"": {{useWish}},
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": {{useNames}},
+    ""isPhoneRequired"": {{isPhoneRequired}},
+    ""logo"": null
+}{noformat}
+
+[^Новая таблица - Negative tests-final.csv]
+[^Box test full flow.postman_test_run.json]
+[^workspace.postman_globals_new.json]
+
+
+
+*Expected Result*:
+
+400 kod",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-25,IS-26,IS-15,13/Dec/22 11:11 PM;616c7d88a6ecfc0071ceb3da;Box test full flow.postman_test_run.json;https://team-16689568931872.atlassian.net/secure/attachment/10001/Box+test+full+flow.postman_test_run.json,13/Dec/22 11:11 PM;616c7d88a6ecfc0071ceb3da;workspace.postman_globals_new.json;https://team-16689568931872.atlassian.net/secure/attachment/10000/workspace.postman_globals_new.json,13/Dec/22 11:15 PM;616c7d88a6ecfc0071ceb3da;Новая таблица - Negative tests-final.csv;https://team-16689568931872.atlassian.net/secure/attachment/10009/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0+-+Negative+tests-final.csv,,,0|i00053:,To Do
+Create box - wrong method,IS-23,10022,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 11:02 PM,13/Dec/22 11:05 PM,13/Dec/22 11:04 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+DELETE [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/box/ (wrong method)
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{$randomProductName}}"",
+    ""key"": ""{{key}}"",//key grom create request
+    ""picture"": ""cup_two"",
+    ""usePost"": true,
+    ""useCashLimit"": true,
+    ""cashLimit"": ""100"",
+    ""cashLimitCurrency"": ""rub"",
+    ""useWish"": true,
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": false,
+    ""isPhoneRequired"": false,
+    ""logo"": null
+}{noformat}
+
+*Expected Result*:
+
+200 kod
+
+ок ",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,IS-22,,,,,,0|i0004v:,To Do
+Create box - wrong param  key,IS-22,10021,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 11:01 PM,13/Dec/22 11:02 PM,13/Dec/22 11:01 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/box/
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{$randomProductName}}"",
+    ""ke"": ""{{key}}"",//wrong key
+    ""picture"": ""cup_two"",
+    ""usePost"": true,
+    ""useCashLimit"": true,
+    ""cashLimit"": ""100"",
+    ""cashLimitCurrency"": ""rub"",
+    ""useWish"": true,
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": false,
+    ""isPhoneRequired"": false,
+    ""logo"": null
+}{noformat}
+
+*Expected Result*:
+
+400 kod
+
+Example of response
+
+{noformat}{
+    ""error"": {
+        ""message"": ""validations.invalid"",
+        ""errors"": [
+            {
+                ""transKey"": ""validations.required"",
+                ""field"": ""key""
+            }
+        ],
+        ""name"": ""ValidationError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 400
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-23,,IS-20,,,,,,0|i0004n:,To Do
+Create box - wrong param name,IS-21,10020,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 11:00 PM,13/Dec/22 11:00 PM,13/Dec/22 11:22 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/|https://staging.lpitko.ru/api/register?redirect=%2F]aptest
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{$randomProductName}}"",
+    ""key"": ""{{key}}"",//key from create request
+    ""picture"": ""cup_two"",
+    ""usePost"": true,
+    ""useCashLimit"": true,
+    ""cashLimit"": ""100"",
+    ""cashLimitCurrency"": ""rub"",
+    ""useWish"": true,
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": false,
+    ""isPhoneRequired"": false,
+    ""logo"": null
+}{noformat}
+
+but without cookies in headers
+
+*Expected Result*:
+
+200 kod
+
+Example of response
+
+{noformat}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,IS-20,,,,,,0|i0004f:,To Do
+Create box- wrong endpoint,IS-20,10019,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 10:57 PM,13/Dec/22 11:01 PM,13/Dec/22 10:59 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/|https://staging.lpitko.ru/api/register?redirect=%2F]aptest
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""nam"": ""{{$randomProductName}}"",//wrong name
+    ""key"": ""{{key}}"",//key from create request
+    ""picture"": ""cup_two"",
+    ""usePost"": true,
+    ""useCashLimit"": true,
+    ""cashLimit"": ""100"",
+    ""cashLimitCurrency"": ""rub"",
+    ""useWish"": true,
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": false,
+    ""isPhoneRequired"": false,
+    ""logo"": null
+}{noformat}
+
+
+
+*Expected Result*:
+
+400 kod
+
+Example of response
+
+{noformat}{
+    ""error"": {
+        ""message"": ""validations.invalid"",
+        ""errors"": [
+            {
+                ""transKey"": ""validations.required"",
+                ""field"": ""name""
+            }
+        ],
+        ""name"": ""ValidationError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 400
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-21,IS-22,IS-19,,,,,,0|i00047:,To Do
+Change box - 401,IS-19,10018,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 10:55 PM,13/Dec/22 10:59 PM,13/Dec/22 10:59 PM,,,0,,"
+
+*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/api|https://staging.lpitko.ru/api/register?redirect=%2F]/box/
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{$randomProductName}}"",
+    ""key"": ""{{key}}"",//key from create request
+    ""picture"": ""cup_two"",
+    ""usePost"": true,
+    ""useCashLimit"": true,
+    ""cashLimit"": ""100"",
+    ""cashLimitCurrency"": ""rub"",
+    ""useWish"": true,
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": false,
+    ""isPhoneRequired"": false,
+    ""logo"": null
+}{noformat}
+
+but without cookies in headers
+
+*Expected Result*:
+
+401 kod
+
+Example of response
+
+{noformat}{
+    ""error"": {
+        ""message"": ""Unauthorized"",
+        ""errors"": [
+            ""Unauthorized""
+        ],
+        ""name"": ""UnauthorizedError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 401
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-20,,IS-17,,,,,,0|i0003z:,To Do
+Delete box,IS-18,10017,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 10:52 PM,13/Dec/22 10:53 PM,13/Dec/22 10:52 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+DELETE [https://staging.lpitko.ru/api/|https://staging.lpitko.ru/api/register?redirect=%2F]box/{{key}}
+
+{{key}} - key from create [request|https://team-16689568931872.atlassian.net/browse/IS-15] 
+
+*Expected Result*:
+
+Example of response
+
+200 kod
+
+ок ",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,IS-16,,,,,,0|i0003r:,To Do
+Change box,IS-17,10016,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 10:49 PM,13/Dec/22 10:55 PM,13/Dec/22 10:54 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/api|https://staging.lpitko.ru/api/register?redirect=%2F]box/
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{$randomProductName}}"",
+    ""key"": ""{{key}}"",//key from create request
+    ""picture"": ""cup_two"",
+    ""usePost"": true,
+    ""useCashLimit"": true,
+    ""cashLimit"": ""100"",
+    ""cashLimitCurrency"": ""rub"",
+    ""useWish"": true,
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": false,
+    ""isPhoneRequired"": false,
+    ""logo"": null
+}{noformat}
+
+*Expected Result*:
+
+200 kod
+
+Example of response
+
+{noformat}{
+    ""box"": {
+        ""name"": ""Rustic Rubber Chair"",
+        ""key"": ""lOc6TRhFh2UElAZ"",
+        ""picture"": ""cup_two"",
+        ""year"": ""2022"",
+        ""inviteKey"": ""8JX7wcV1JbM6VDC"",
+        ""usePost"": true,
+        ""useCashLimit"": true,
+        ""cashLimit"": 100,
+        ""cashLimitCurrency"": ""rub"",
+        ""useWish"": true,
+        ""useCircleDraw"": false,
+        ""isInviteAfterDraw"": false,
+        ""isArchived"": false,
+        ""useNames"": false,
+        ""isPhoneRequired"": false,
+        ""logo"": null
+    },
+    ""admin"": {
+        ""username"": ""aon-work@yandex.ru"",
+        ""email"": ""aon-work@yandex.ru""
+    },
+    ""participantsNumber"": 0,
+    ""isAdmin"": true,
+    ""isParticipant"": false,
+    ""isInvited"": false,
+    ""inviteLink"": ""https://staging.lpitko.ru/box/lOc6TRhFh2UElAZ/card?join=8JX7wcV1JbM6VDC"",
+    ""isActiveDraw"": false,
+    ""canCreateCards"": true
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-19,,IS-15,,,,,,0|i0003j:,To Do
+Show box,IS-16,10015,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 10:34 PM,13/Dec/22 10:54 PM,13/Dec/22 10:58 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+GET [https://staging.lpitko.ru/api/|https://staging.lpitko.ru/api/register?redirect=%2F]box/{{key}}
+
+{{key}} - key from create [request|https://team-16689568931872.atlassian.net/browse/IS-15] 
+
+*Expected Result*:
+
+Example of response
+
+200 kod
+
+{noformat} ""box"": {
+        ""name"": ""Handcrafted Soft Chips"",
+        ""key"": ""lOc6TRhFh2UElAZ"",
+        ""picture"": ""cup_two"",
+        ""year"": ""2022"",
+        ""inviteKey"": ""8JX7wcV1JbM6VDC"",
+        ""usePost"": true,
+        ""useCashLimit"": true,
+        ""cashLimit"": 100,
+        ""cashLimitCurrency"": ""rub"",
+        ""useWish"": true,
+        ""useCircleDraw"": false,
+        ""isInviteAfterDraw"": false,
+        ""isArchived"": false,
+        ""useNames"": true,
+        ""isPhoneRequired"": true,
+        ""logo"": null
+    },
+    ""admin"": {
+        ""username"": ""aon-work@yandex.ru"",
+        ""email"": ""aon-work@yandex.ru""
+    },
+    ""participantsNumber"": 0,
+    ""isAdmin"": true,
+    ""isParticipant"": false,
+    ""isInvited"": false,
+    ""inviteLink"": ""https://staging.lpitko.ru/box/lOc6TRhFh2UElAZ/card?join=8JX7wcV1JbM6VDC"",
+    ""isActiveDraw"": false,
+    ""canCreateCards"": true{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-18,,,,,,,,0|i0003b:,To Do
+Create box,IS-15,10014,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,13/Dec/22 10:24 PM,13/Dec/22 11:06 PM,13/Dec/22 11:05 PM,,,0,,"*Steps:*
+
+Send in a Postman request with the parameters:
+
+POST [https://staging.lpitko.ru/api|https://staging.lpitko.ru/api/register?redirect=%2F]/box/
+
+Body:
+
+{noformat}{
+    ""email"": null,
+    ""name"": ""{{$randomProductName}}"",
+    ""key"": ""{{$randomPassword}}"",
+    ""picture"": ""cup_two"",
+    ""usePost"": true,
+    ""useCashLimit"": true,
+    ""cashLimit"": ""100"",
+    ""cashLimitCurrency"": ""rub"",
+    ""useWish"": true,
+    ""useCircleDraw"": null,
+    ""isInviteAfterDraw"": null,
+    ""isArchived"": null,
+    ""createAdminCard"": null,
+    ""isCreated"": true,
+    ""useNames"": true,
+    ""isPhoneRequired"": true,
+    ""logo"": null
+}{noformat}
+
+
+
+*Expected Result*:
+
+200 kod
+
+Example of response
+
+{noformat} ""box"": {
+        ""name"": ""Handcrafted Soft Chips"",
+        ""key"": ""lOc6TRhFh2UElAZ"",
+        ""picture"": ""cup_two"",
+        ""year"": ""2022"",
+        ""inviteKey"": ""8JX7wcV1JbM6VDC"",
+        ""usePost"": true,
+        ""useCashLimit"": true,
+        ""cashLimit"": 100,
+        ""cashLimitCurrency"": ""rub"",
+        ""useWish"": true,
+        ""useCircleDraw"": false,
+        ""isInviteAfterDraw"": false,
+        ""isArchived"": false,
+        ""useNames"": true,
+        ""isPhoneRequired"": true,
+        ""logo"": null
+    },
+    ""admin"": {
+        ""username"": ""aon-work@yandex.ru"",
+        ""email"": ""aon-work@yandex.ru""
+    },
+    ""participantsNumber"": 0,
+    ""isAdmin"": true,
+    ""isParticipant"": false,
+    ""isInvited"": false,
+    ""inviteLink"": ""https://staging.lpitko.ru/box/lOc6TRhFh2UElAZ/card?join=8JX7wcV1JbM6VDC"",
+    ""isActiveDraw"": false,
+    ""canCreateCards"": true
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-17,IS-24,,,,,,,0|i00033:,To Do
+Logout,IS-14,10013,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 5:04 PM,24/Nov/22 5:06 PM,24/Nov/22 5:08 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+GET [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/logout
+
+Body:
+
+{noformat}{
+    ""password"": ""111111111111111111111""
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 402
+
+{noformat}ОК{noformat}
+
+Without the use of cookies, the user cannot perform actions on his personal data",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|i0002v:,To Do
+Change your password to a 21 character password,IS-13,10012,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 5:02 PM,24/Nov/22 5:05 PM,24/Nov/22 5:08 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/password
+
+Body:
+
+{noformat}{
+    ""password"": ""111111111111111111111""
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 400
+
+{noformat}{
+    ""error"": {
+        ""message"": ""validations.invalid"",
+        ""errors"": [
+            {
+                ""transKey"": ""validations.maxCharLength"",
+                ""field"": ""password"",
+                ""params"": {
+                    ""max"": 20
+                }
+            }
+        ],
+        ""name"": ""ValidationError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 400
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|i0002n:,To Do
+Change your password to a 20 character password,IS-12,10011,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 5:01 PM,24/Nov/22 5:03 PM,24/Nov/22 5:01 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/password
+
+Body:
+
+{noformat}{
+    ""password"": ""12345678901234567890""
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 200
+
+{noformat}{
+    ""id"": 3000034,
+    ""email"": ""aon-work@yandex.ru"",
+    ""username"": ""1111111111111111111111111111111111111111111111111111111111111111"",
+    ""accounts"": [],
+    ""accountNotifications"": [
+        {
+            ""accountType"": ""email"",
+            ""externalId"": ""aon-work@yandex.ru""
+        }
+    ],
+    ""isVerified"": true,
+    ""verifyEmail"": null,
+    ""verificationKey"": ""181q5jijkg""
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|i0002f:,To Do
+Change your password to a 6 character password,IS-11,10010,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 4:58 PM,24/Nov/22 5:01 PM,24/Nov/22 4:59 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/password
+
+Body:
+
+{noformat}{
+    ""password"": ""123456""
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 200
+
+{noformat}{
+    ""id"": 3000034,
+    ""email"": ""aon-work@yandex.ru"",
+    ""username"": ""1111111111111111111111111111111111111111111111111111111111111111"",
+    ""accounts"": [],
+    ""accountNotifications"": [
+        {
+            ""accountType"": ""email"",
+            ""externalId"": ""aon-work@yandex.ru""
+        }
+    ],
+    ""isVerified"": true,
+    ""verifyEmail"": null,
+    ""verificationKey"": ""181q5jijkg""
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|i00027:,To Do
+Change your password to a five character password,IS-10,10009,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 4:57 PM,24/Nov/22 4:59 PM,24/Nov/22 4:57 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/password
+
+Body:
+
+{noformat}{
+    ""password"": ""12345""
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 400
+
+{noformat}{
+    ""error"": {
+        ""message"": ""validations.invalid"",
+        ""errors"": [
+            {
+                ""transKey"": ""validations.minCharLength"",
+                ""field"": ""password"",
+                ""params"": {
+                    ""min"": 6
+                }
+            }
+        ],
+        ""name"": ""ValidationError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 400
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|i0001z:,To Do
+Change the password to a password with an empty value,IS-9,10008,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 4:55 PM,24/Nov/22 4:58 PM,24/Nov/22 4:55 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/password
+
+Body:
+
+{noformat}{
+    ""password"": """"
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 400
+
+{noformat}{
+    ""error"": {
+        ""message"": ""validations.invalid"",
+        ""errors"": [
+            {
+                ""transKey"": ""validations.invalidType"",
+                ""field"": ""password"",
+                ""params"": {
+                    ""type"": ""string""
+                }
+            }
+        ],
+        ""name"": ""ValidationError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 400
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|i0001r:,To Do
+Change login to a 65-character login,IS-8,10007,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 3:24 PM,24/Nov/22 4:57 PM,24/Nov/22 4:54 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/username
+
+Body:
+
+{noformat}{
+    ""username"": ""11111111111111111111111111111111111111111111111111111111111111111""
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 400
+
+{noformat}{
+    ""error"": {
+        ""message"": ""validations.invalid"",
+        ""errors"": [
+            {
+                ""transKey"": ""validations.maxCharLength"",
+                ""field"": ""username"",
+                ""params"": {
+                    ""max"": 64
+                }
+            }
+        ],
+        ""name"": ""ValidationError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 400
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,IS-7,,,,,,0|i0001j:,To Do
+Change login to a 64-character login,IS-7,10006,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 3:23 PM,24/Nov/22 3:24 PM,24/Nov/22 3:23 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/username
+
+Body:
+
+{noformat}{
+    ""username"": ""1111111111111111111111111111111111111111111111111111111111111111""
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 200
+
+{noformat}{
+    ""id"": 3000034,
+    ""email"": ""aon-work@yandex.ru"",
+    ""username"": ""1111111111111111111111111111111111111111111111111111111111111111"",
+    ""accounts"": [],
+    ""accountNotifications"": [
+        {
+            ""accountType"": ""email"",
+            ""externalId"": ""aon-work@yandex.ru""
+        }
+    ],
+    ""isVerified"": true,
+    ""verifyEmail"": null,
+    ""verificationKey"": ""181q5jijkg""
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-8,,,,,,,,0|i0001b:,To Do
+Change login to a two-character login,IS-6,10005,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 3:21 PM,24/Nov/22 3:24 PM,24/Nov/22 3:21 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/username
+
+Body:
+
+{noformat}{
+    ""username"": ""11""
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 200
+
+{noformat}    ""id"": 3000034,
+    ""email"": ""aon-work@yandex.ru"",
+    ""username"": ""11"",
+    ""accounts"": [],
+    ""accountNotifications"": [
+        {
+            ""accountType"": ""email"",
+            ""externalId"": ""aon-work@yandex.ru""
+        }
+    ],
+    ""isVerified"": true,
+    ""verifyEmail"": null,
+    ""verificationKey"": ""181q5jijkg""
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|i00013:,To Do
+Change login to empty value,IS-5,10004,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 3:16 PM,24/Nov/22 3:22 PM,24/Nov/22 3:16 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+PUT [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/account/username
+
+Body:
+
+{noformat}{
+    ""username"": """"
+}{noformat}
+
+Set to Headers cookies value: 
+
+{noformat}_ym_uid=1669212261250738644; _ym_d=1669212261; _ym_isad=2; connect.sid=s%3AsP2_votaWI-A8J-kDz9Ugvz7_eduK4Aw.6NwSn6ybciqUBaBzvyphPdt5PkoWb3poyf4Uu5lWsrU; jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMwMDAwMzQsImlhdCI6MTY2OTI3NjMwOSwiZXhwIjoxNjY5Mjc5OTA5fQ.cGaF7-p42d6QzJYTgKePrnKF8DlPOdD-sTCOcvmrvZg{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 400
+
+{noformat}{
+    ""error"": {
+        ""message"": ""validations.invalid"",
+        ""errors"": [
+            {
+                ""transKey"": ""validations.required"",
+                ""field"": ""username""
+            }
+        ],
+        ""name"": ""ValidationError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 400
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|i0000v:,To Do
+Login with invalid password,IS-4,10003,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 11:48 AM,24/Nov/22 3:16 PM,24/Nov/22 3:15 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+POST [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/login?redirect=%2F
+
+Body:
+
+{noformat}{
+    ""email"": ""aon-work@yandex.ru"",
+    ""password"": ""invalid_password""
+}{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 404
+
+{noformat}{
+    ""error"": {
+        ""message"": ""INVALID_USERNAME_OR_PASSWORD"",
+        ""errors"": [
+            ""INVALID_USERNAME_OR_PASSWORD""
+        ],
+        ""name"": ""BadRequestError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 400
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,IS-3,,,,,,0|i0000n:,To Do
+Login with invalid email,IS-3,10002,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 11:46 AM,24/Nov/22 11:48 AM,24/Nov/22 2:56 PM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+POST [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/login?redirect=%2F
+
+Body:
+
+{noformat}{
+    ""email"": ""invalid_email@yandex.ru"",
+    ""password"": ""KK9998""
+}{noformat}
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 404
+
+{noformat}{
+    ""error"": {
+        ""message"": ""USER_NOT_FOUND"",
+        ""errors"": [
+            ""USER_NOT_FOUND""
+        ],
+        ""name"": ""NotFoundError"",
+        ""type"": ""server"",
+        ""data"": null,
+        ""status"": 404
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-4,,IS-2,,,,,,0|i0000f:,To Do
+Login with valid data,IS-2,10001,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,24/Nov/22 11:40 AM,24/Nov/22 11:46 AM,24/Nov/22 11:40 AM,,,0,,"*Precondition*
+
+Create a new request in Postman
+
+POST [https://staging.lpitko.ru|https://staging.lpitko.ru/api/register?redirect=%2F]/api/login?redirect=%2F
+
+Body:
+
+{noformat}{
+    ""email"": ""aon-work@yandex.ru"",
+    ""password"": ""12345678901234567890"" 
+}{noformat}
+
+
+
+*Steps:*
+
+Sent  in Postman request from Precondition
+
+*Expected Result:*
+
+Status - 200
+
+{noformat}{
+    ""id"": 3000034,
+    ""accountType"": ""email"",
+    ""username"": ""ZeroMan7"",
+    ""email"": ""aon-work@yandex.ru""
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,IS-3,,,,,,,,0|i00007:,To Do
+Registration with valid mail and login,IS-1,10000,Test,To Do,IS,IT-Switcher,software,apanas1984,616c7d88a6ecfc0071ceb3da,,Medium,,,,apanas1984,616c7d88a6ecfc0071ceb3da,apanas1984,616c7d88a6ecfc0071ceb3da,23/Nov/22 8:59 PM,13/Dec/22 10:07 PM,13/Dec/22 10:22 PM,,,0,login,"
+
+*Steps:*
+
+Send in Postman request with parameters:
+
+POST [https://staging.lpitko.ru/api/register?redirect=%2F|https://staging.lpitko.ru/api/register?redirect=%2F]
+
+Body:
+
+{noformat}{
+""email"": ""aon-work@yandex.ru"",
+""username"": ""GoMan""
+}{noformat}
+
+*Expected Result*:
+
+{noformat}{
+    ""error"": {
+        ""message"": ""USER_ALREADY_EXISTS"",
+        ""errors"": [
+            ""USER_ALREADY_EXISTS""
+        ],
+        ""name"": ""ConflictError"",
+        ""type"": ""server"",
+        ""data"": ""aon-work@yandex.ru"",
+        ""status"": 409
+    }
+}{noformat}",,apanas1984,616c7d88a6ecfc0071ceb3da,,,,,,,,,,,,,,,,,0|hzzzzz:,To Do

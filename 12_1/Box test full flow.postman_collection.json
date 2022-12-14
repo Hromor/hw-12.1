@@ -1,0 +1,502 @@
+{
+	"info": {
+		"_postman_id": "4926656e-1084-4fa4-af17-35101e9ea5e7",
+		"name": "Box test full flow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18200289"
+	},
+	"item": [
+		{
+			"name": "Create box",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"const response = pm.response.json()",
+							"",
+							"pm.globals.set(\"key\", response.box.key);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"{{$randomProductName}}\",\n    \"key\": \"{{$randomPassword}}\",\n    \"picture\": \"cup_two\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": true,\n    \"isPhoneRequired\": true,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show box",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"Тест 4\",\n    \"key\": \"Testt1\",\n    \"picture\": \"cup_two\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": true,\n    \"isPhoneRequired\": true,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/{{key}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						"{{key}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change box",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"{{$randomProductName}}\",\n    \"key\": \"{{key}}\",\n    \"picture\": \"cup_two\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": false,\n    \"isPhoneRequired\": false,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete box",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/{{key}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						"{{key}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show box after delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"Тест 4\",\n    \"key\": \"Testt1\",\n    \"picture\": \"cup_two\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": true,\n    \"isPhoneRequired\": true,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/{{key}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						"{{key}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create box - 401",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {",
+							"    pm.response.to.have.status(401);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"{{$randomProductName}}\",\n    \"key\": \"{{$randomPassword}}\",\n    \"picture\": \"cup_two\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": true,\n    \"isPhoneRequired\": true,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create box- wrong endpoint",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"{{$randomProductName}}\",\n    \"key\": \"{{$randomPassword}}\",\n    \"picture\": \"cup_two\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": true,\n    \"isPhoneRequired\": true,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/aptest",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"aptest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create box - wrong param name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"nam\": \"{{$randomProductName}}\",\n    \"key\": \"{{$randomPassword}}\",\n    \"picture\": \"cup_\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": true,\n    \"isPhoneRequired\": true,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create box - wrong param  key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"{{$randomProductName}}\",\n    \"ke\": \"{{$randomPassword}}\",\n    \"picture\": \"cup_two\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": true,\n    \"isPhoneRequired\": true,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create box - wrong method",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"{{$randomProductName}}\",\n    \"key\": \"{{$randomPassword}}\",\n    \"picture\": \"cup_two\",\n    \"usePost\": true,\n    \"useCashLimit\": true,\n    \"cashLimit\": \"100\",\n    \"cashLimitCurrency\": \"rub\",\n    \"useWish\": true,\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": true,\n    \"isPhoneRequired\": true,\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

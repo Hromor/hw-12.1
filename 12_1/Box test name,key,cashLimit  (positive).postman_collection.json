@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "02259a65-b4f3-4fab-9f6b-a512a4f954f5",
+		"name": "Box test name,key,cashLimit  (positive)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18200289"
+	},
+	"item": [
+		{
+			"name": "Create box",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"{{name}}\",\n    \"key\": \"{{key}}\",\n    \"picture\": \"{{picture}}\",\n    \"usePost\": {{usePost}},\n    \"useCashLimit\": {{useCashLimit}},\n    \"cashLimit\": \"{{cashLimit}}\",\n    \"cashLimitCurrency\": \"{{cashLimitCurrency}}\",\n    \"useWish\": {{useWish}},\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": {{useNames}},\n    \"isPhoneRequired\": {{isPhoneRequired}},\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change box",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{token2}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": null,\n    \"name\": \"{{name}}\",\n    \"key\": \"{{key}}\",\n    \"picture\": \"cookie_star\",\n    \"usePost\": {{usePost}},\n    \"useCashLimit\": {{useCashLimit}},\n    \"cashLimit\": \"{{cashLimit}}\",\n    \"cashLimitCurrency\": \"{{cashLimitCurrency}}\",\n    \"useWish\": {{useWish}},\n    \"useCircleDraw\": null,\n    \"isInviteAfterDraw\": null,\n    \"isArchived\": null,\n    \"createAdminCard\": null,\n    \"isCreated\": true,\n    \"useNames\": {{useNames}},\n    \"isPhoneRequired\": {{isPhoneRequired}},\n    \"logo\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/box/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"box",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

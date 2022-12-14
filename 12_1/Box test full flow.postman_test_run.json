@@ -1,0 +1,328 @@
+{
+	"id": "0856ef51-39b7-4c74-97f9-3853374558a3",
+	"name": "Box test full flow",
+	"timestamp": "2022-12-13T18:53:45.391Z",
+	"collection_id": "18200289-4926656e-1084-4fa4-af17-35101e9ea5e7",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ab6dd0af-4350-4649-a247-743dc750fe7d",
+			"name": "Create box",
+			"url": "https://staging.lpitko.ru/api/box/",
+			"time": 576,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				576
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "056de51d-5fc7-4c3c-93c5-329f2e87a144",
+			"name": "Show box",
+			"url": "https://staging.lpitko.ru/api/box/UkeOaHEq0nPssrq",
+			"time": 1004,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1004
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c8e24f01-8c87-46ec-8a4d-592d86d8eddf",
+			"name": "Change box",
+			"url": "https://staging.lpitko.ru/api/box/",
+			"time": 365,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				365
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3278a23e-27d9-41f7-81c4-d2c4bf6e80de",
+			"name": "Delete box",
+			"url": "https://staging.lpitko.ru/api/box/UkeOaHEq0nPssrq",
+			"time": 81,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				81
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6b8a91f5-b71b-4af1-b408-b5f87f4ea06a",
+			"name": "Show box after delete",
+			"url": "https://staging.lpitko.ru/api/box/UkeOaHEq0nPssrq",
+			"time": 66,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				66
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "25cbb3a5-6435-409b-be5b-a74096cd159a",
+			"name": "Create box - 401",
+			"url": "https://staging.lpitko.ru/api/box/",
+			"time": 323,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 401": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				323
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			]
+		},
+		{
+			"id": "f2690cdd-e3b2-484f-8214-f4df010cc4da",
+			"name": "Create box- wrong endpoint",
+			"url": "https://staging.lpitko.ru/aptest",
+			"time": 228,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				228
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "839ef328-8206-44e2-a2c5-959c2eceaa91",
+			"name": "Create box - wrong param name",
+			"url": "https://staging.lpitko.ru/api/box/",
+			"time": 437,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				437
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "13eac810-2434-4e9a-a80d-d0efe10bd78d",
+			"name": "Create box - wrong param  key",
+			"url": "https://staging.lpitko.ru/api/box/",
+			"time": 316,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				316
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "785d111b-16c5-45ff-8878-ff8a1b074230",
+			"name": "Create box - wrong method",
+			"url": "https://staging.lpitko.ru/api/box/",
+			"time": 636,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				636
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4032,
+	"collection": {
+		"requests": [
+			{
+				"id": "ab6dd0af-4350-4649-a247-743dc750fe7d",
+				"method": "POST"
+			},
+			{
+				"id": "056de51d-5fc7-4c3c-93c5-329f2e87a144",
+				"method": "GET"
+			},
+			{
+				"id": "c8e24f01-8c87-46ec-8a4d-592d86d8eddf",
+				"method": "POST"
+			},
+			{
+				"id": "3278a23e-27d9-41f7-81c4-d2c4bf6e80de",
+				"method": "DELETE"
+			},
+			{
+				"id": "6b8a91f5-b71b-4af1-b408-b5f87f4ea06a",
+				"method": "GET"
+			},
+			{
+				"id": "25cbb3a5-6435-409b-be5b-a74096cd159a",
+				"method": "POST"
+			},
+			{
+				"id": "f2690cdd-e3b2-484f-8214-f4df010cc4da",
+				"method": "POST"
+			},
+			{
+				"id": "839ef328-8206-44e2-a2c5-959c2eceaa91",
+				"method": "POST"
+			},
+			{
+				"id": "13eac810-2434-4e9a-a80d-d0efe10bd78d",
+				"method": "POST"
+			},
+			{
+				"id": "785d111b-16c5-45ff-8878-ff8a1b074230",
+				"method": "DELETE"
+			}
+		]
+	}
+}

@@ -1,0 +1,11 @@
+name,key,picture,usePost,useCashLimit,cashLimit,cashLimitCurrency,useWish,useNames,isPhoneRequired
+t,,tree_toys,true,true,100,rub,false,false,false
+test,Привет,cup_two,true,true,100,rub,false,false,false
+test,Test test ,cup_cake,true,true,100,rub,false,false,false
+test,TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestt,cup_cake,true,true,100,rub,false,false,false
+,test,cookie_star,true,true,100,rub,false,false,false
+Тест тест тестТест тест тестТест тест тестТест тест тестТест тесТест тест тестТест тест тесТест тест тестТест тест тестТест тест тестТест тест тестТест тесТест тест тестТест тест тесТест тест тестТест тест тестТест тест тестТест тест тестТест тесТест тестjt,test1,mittens,true,true,100,rub,false,false,false
+test,test2,tree_toys,true,true,,rub,false,false,false
+test,test3,house_one,true,true,-1,rub,false,false,false
+test,test5,house_one,true,true,10000001,rub,false,false,false
+test,test6,house_one,true,true,&621827,rub,false,false,false

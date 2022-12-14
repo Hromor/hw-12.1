@@ -1,0 +1,150 @@
+{
+	"id": "c6c09c03-7f51-4548-8dcf-51bbbbb8e48b",
+	"name": "Box test name,key,cashLimit  (positive)",
+	"timestamp": "2022-12-13T18:53:14.822Z",
+	"collection_id": "18200289-02259a65-b4f3-4fab-9f6b-a512a4f954f5",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 20,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ad206d63-a4ab-4532-8498-e283db881dd4",
+			"name": "Create box",
+			"time": 92,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 10,
+					"fail": 0
+				}
+			},
+			"times": [
+				477,
+				504,
+				87,
+				444,
+				746,
+				489,
+				94,
+				354,
+				197,
+				92
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "595390ab-0534-4e04-814e-2130398ebc7f",
+			"name": "Change box",
+			"time": 346,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 10,
+					"fail": 0
+				}
+			},
+			"times": [
+				424,
+				360,
+				93,
+				351,
+				470,
+				436,
+				929,
+				504,
+				315,
+				346
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 10,
+	"totalTime": 7712,
+	"collection": {
+		"requests": [
+			{
+				"id": "ad206d63-a4ab-4532-8498-e283db881dd4",
+				"method": "POST"
+			},
+			{
+				"id": "595390ab-0534-4e04-814e-2130398ebc7f",
+				"method": "POST"
+			}
+		]
+	}
+}
